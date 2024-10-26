@@ -50,6 +50,9 @@ body {
 
 .divButton{
     margin-top: 2.5em;
+    display: flex; /* Active Flexbox */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
 }
 
 .buttonRS{

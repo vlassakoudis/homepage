@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yannick - Business Analyst</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato&display=swap" rel="stylesheet">
+
+</head>
+<body class="">
+<div class="text-center p-8">
+    <h1 class="title">
+       Hey 👋 I'm Yannick ,<br/>
+       a <span class="job">Business Analyst</span>
+    </h1>
+    <h2 class="subtitle">
+        I am a business analyst - developer - runner , powered by passion
+    </h2>
+    <div class="divButton">
+        <a href="https://www.linkedin.com/in/yannickvlassakoudis/" target="_blank">
+            <span class="buttonRS">Linkedin</span>
+        </a>
+
+    </div>
+
+</div>
+<script>
+    function createBall() {
+        const ball = document.createElement('div');
+        ball.className = 'ball';
+
+        // Position aléatoire
+        ball.style.left = Math.random() * window.innerWidth + 'px';
+        ball.style.top = Math.random() * window.innerHeight + 'px';
+
+        document.body.appendChild(ball);
+
+        // Déplacer la boule
+        moveBall(ball);
+    }
+
+    function moveBall(ball) {
+        const deltaX = (Math.random() - 0.5) * 3; // Vitesse horizontale
+        const deltaY = (Math.random() - 0.5) * 3; // Vitesse verticale
+
+        function animate() {
+            const rect = ball.getBoundingClientRect();
+
+            // Déplacer la boule
+            ball.style.left = rect.left + deltaX + 'px';
+            ball.style.top = rect.top + deltaY + 'px';
+
+
+            requestAnimationFrame(animate);
+        }
+        animate();
+    }
+
+    // Créer plusieurs boules
+    for (let i = 0; i < 20; i++) {
+        createBall();
+    }
+</script>
+</body>
+</html>

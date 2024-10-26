@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* La page prend toute la hauteur de la vue */
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #ebebec; /* Optionnel : couleur d'arrière-plan */
+}
+
+.title{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: clamp(2rem, 2.5vw + 1rem, 6rem);
+    font-weight: 800;
+    line-height: 1.2;
+
+    color: rgba(40, 45, 52, 1);
+
+    text-align: center;
+    letter-spacing: -0.025em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.job{
+    display: inline-block;
+    color: rgba(30, 144, 255, 1);
+    background-color: rgba(0, 114, 255, 0.15);
+    padding: 0.1em 0.2em 0.1em 0.2em;
+    border-radius: 0.2em;
+}
+
+.subtitle{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: clamp(1rem, 2.5vw + 0.1rem, 1.25rem);
+    line-height: 1.2;
+
+    color: rgba(105, 108, 113, 1);
+
+    text-align: center;
+    letter-spacing: -0.025em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 2em;
+}
+
+.divButton{
+    margin-top: 2.5em;
+}
+
+.buttonRS{
+    padding: 5px 30px 5px 30px;
+    border: #cacbcd solid 1px;
+    border-radius: 8px;
+    color: rgba(105, 108, 113, 1);
+    background-color: white;
+}
+
+.buttonRS:hover{
+    background-color: rgba(202, 203, 205, 0.5);
+    color: rgba(105, 108, 113, 1) ;
+}
+
+.divButton a{
+    text-decoration: none;
+}
+
+.ball {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #0072FF; /* Couleur de la boule */
+    width: 20px; /* Diamètre de la boule */
+    height: 20px; /* Diamètre de la boule */
+    opacity: 0.6; /* Opacité de la boule */
+}

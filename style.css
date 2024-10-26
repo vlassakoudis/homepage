@@ -1,3 +1,16 @@
+:root {
+    --grisclair: #ebebec;
+    --grismoyen: rgba(105, 108, 113, 1);
+    --noir: rgba(40, 45, 52, 1);
+    --bleufash: rgba(30, 144, 255, 1);
+    --bleufonce: rgba(0, 114, 255, 0.15);
+
+}
+
+
+
+
+
 body {
     display: flex;
     align-items: center;
@@ -5,7 +18,7 @@ body {
     height: 100vh; /* La page prend toute la hauteur de la vue */
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background-color: #ebebec; /* Optionnel : couleur d'arrière-plan */
+    background-color: var(--grisclair); /* Optionnel : couleur d'arrière-plan */
 }
 
 .title{
@@ -16,7 +29,7 @@ body {
     font-weight: 800;
     line-height: 1.2;
 
-    color: rgba(40, 45, 52, 1);
+    color: var(--noir);
 
     text-align: center;
     letter-spacing: -0.025em;
@@ -26,8 +39,8 @@ body {
 
 .job{
     display: inline-block;
-    color: rgba(30, 144, 255, 1);
-    background-color: rgba(0, 114, 255, 0.15);
+    color: var(--bleufash);
+    background-color: var(--bleufonce);
     padding: 0.1em 0.2em 0.1em 0.2em;
     border-radius: 0.2em;
 }
@@ -39,7 +52,7 @@ body {
     font-size: clamp(1rem, 2.5vw + 0.1rem, 1.25rem);
     line-height: 1.2;
 
-    color: rgba(105, 108, 113, 1);
+    color: var(--grismoyen);
 
     text-align: center;
     letter-spacing: -0.025em;
@@ -57,15 +70,15 @@ body {
 
 .buttonRS{
     padding: 5px 30px 5px 30px;
-    border: #cacbcd solid 1px;
+    border: var(--grismoyen) solid 1px;
     border-radius: 8px;
-    color: rgba(105, 108, 113, 1);
+    color: var(--grismoyen);
     background-color: white;
 }
 
 .buttonRS:hover{
     background-color: rgba(202, 203, 205, 0.5);
-    color: rgba(105, 108, 113, 1) ;
+    color: var(--grismoyen) ;
 }
 
 .divButton a{
@@ -75,6 +88,6 @@ body {
 .ball {
     position: absolute;
     border-radius: 50%;
-    background-color: #0072FF; /* Couleur de la boule */
+    background-color: var(--bleufash); /* Couleur de la boule */
     opacity: 0.6; /* Opacité de la boule */
 }

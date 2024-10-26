@@ -41,6 +41,11 @@
         ball.style.left = Math.random() * window.innerWidth + 'px';
         ball.style.top = Math.random() * window.innerHeight + 'px';
 
+        // taille aléatoire aléatoire
+        let taille = 5 + Math.random() * 15
+        ball.style.width = taille + 'px';
+        ball.style.height = taille + 'px';
+
         document.body.appendChild(ball);
 
         // Déplacer la boule
@@ -68,6 +73,10 @@
     for (let i = 0; i < 20; i++) {
         createBall();
     }
+    setInterval(() => {
+        createBall();
+
+    }, 1000);
 </script>
 </body>
 </html>

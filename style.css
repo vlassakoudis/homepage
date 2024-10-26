@@ -76,7 +76,5 @@ body {
     position: absolute;
     border-radius: 50%;
     background-color: #0072FF; /* Couleur de la boule */
-    width: 20px; /* Diamètre de la boule */
-    height: 20px; /* Diamètre de la boule */
     opacity: 0.6; /* Opacité de la boule */
 }
